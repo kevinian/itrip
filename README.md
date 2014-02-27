@@ -6,8 +6,14 @@ ITrip
 
 安装
 ----
+```
+git clone https://github.com/kevinian/itrip
+cd itrip
 npm install
+```
 
 运行
 ----
+```
 npm start
+```
