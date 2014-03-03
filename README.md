@@ -7,13 +7,30 @@ ITrip
 安装
 ----
 ```
-git clone https://github.com/kevinian/itrip
-cd itrip
+npm install forever -g
+git clone https://github.com/kevinian/itrip-home
+cd itrip-home
+npm install
+git clone https://github.com/kevinian/itrip-keystone
+cd itrip-keystone
+npm install
+git clone https://github.com/kevinian/itrip-nodebb
+cd itrip-nodebb
+npm install
+git clone https://github.com/kevinian/itrip-proxy
+cd itrip-proxy
 npm install
 ```
 
 运行
 ----
 ```
-npm start
+cd itrip-home
+forever start app.js
+cd itrip-keystone
+forever start app.js
+cd itrip-nodebb
+forever start app.js
+cd itrip-proxy
+forever start app.js
 ```
