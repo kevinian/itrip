@@ -11,7 +11,8 @@ ITrip
 
 安装
 ----
-```
+
+```sh
 npm install forever -g
 git clone https://github.com/kevinian/itrip-home
 cd itrip-home
@@ -29,7 +30,8 @@ npm install
 
 运行
 ----
-```
+
+```sh
 forever start --sourceDir /itrip-home/ app.js
 forever start --sourceDir /itrip-keystone/ app.js
 forever start --sourceDir /itrip-nodebb/ app.js
@@ -38,10 +40,29 @@ forever start --sourceDir /itrip-proxy/ app.js
 
 关闭
 ----
-```
+
+```sh
 forever stopall
 ```
 
+启动脚本
+--------
+
+复制脚本到指定目录并修改脚本中相关环境配置
+
+####upstart
+
+```sh
+cp ./scripts/itrip-home.conf /etc/init/
+sudo start itrip-home
+```
+
+####bash
+
+```sh
+cp ./scripts/itrip-home /etc/init.d/
+sudo service itrip-home start
+```
 
 [Itrip-Home]:https://github.com/kevinian/itrip-home
 [Itrip-Keystone]:https://github.com/kevinian/itrip-keystone
