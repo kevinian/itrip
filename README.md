@@ -48,7 +48,7 @@ forever stopall
 启动脚本
 --------
 
-复制脚本到指定目录并修改脚本中相关环境配置
+复制脚本到指定目录，修改脚本中相关环境配置以及文件权限
 
 ####upstart
 
@@ -61,6 +61,8 @@ sudo start itrip-home
 
 ```sh
 cp ./scripts/itrip-home /etc/init.d/
+sudo su
+chmod a+x /etc/init.d/itrip-home
 sudo service itrip-home start
 ```
 
