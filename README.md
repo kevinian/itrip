@@ -32,10 +32,10 @@ npm install
 ----
 
 ```sh
-forever start --sourceDir /itrip-home/ app.js
-forever start --sourceDir /itrip-keystone/ app.js
-forever start --sourceDir /itrip-nodebb/ app.js
-forever start --sourceDir /itrip-proxy/ app.js
+forever start --sourceDir ./itrip-home/ app.js
+forever start --sourceDir ./itrip-keystone/ app.js
+forever start --sourceDir ./itrip-nodebb/ app.js
+forever start --sourceDir ./itrip-proxy/ app.js
 ```
 
 关闭
